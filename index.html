@@ -4,13 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Utpal Vaishnav (UV) — Founder, EightQor Group</title>
-<meta name="description" content="Utpal Vaishnav (UV), Founder of EightQor Group. Links to EightQor Capital, Upsquare, House of Starts, The UV Almanac, and LinkedIn.">
+<meta name="description" content="Utpal Vaishnav (UV), Founder of EightQor Group. Links to EightQor Capital, Upsquare, House of Starts, The UV Almanac, and contact.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <link rel="canonical" href="https://uv.bio/">
 
-<!-- Open Graph -->
 <meta property="og:title" content="Utpal Vaishnav (UV)">
-<meta property="og:description" content="Founder, EightQor Group. An ecosystem of capital, technology, and ventures.">
+<meta property="og:description" content="I architect capital, technology, and ventures that compound.">
 <meta property="og:url" content="https://uv.bio/">
 <meta property="og:type" content="profile">
 <meta property="og:site_name" content="UV">
@@ -19,23 +18,19 @@
 <meta property="og:image:width" content="480">
 <meta property="og:image:height" content="480">
 
-<!-- Twitter -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@utpalmv">
 <meta name="twitter:title" content="Utpal Vaishnav (UV)">
-<meta name="twitter:description" content="Founder, EightQor Group. An ecosystem of capital, technology, and ventures.">
+<meta name="twitter:description" content="I architect capital, technology, and ventures that compound.">
 <meta name="twitter:image" content="https://uv.bio/uv-480.webp">
 
-<!-- Favicon -->
 <link rel="icon" type="image/webp" href="uv-240.webp">
 
-<!-- Fonts: Cormorant Garamond for title, JetBrains Mono for body -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap">
 
-<!-- Structured data for SEO/AEO/GEO -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -47,8 +42,14 @@
       "url": "https://uv.bio/",
       "image": "https://uv.bio/uv-480.webp",
       "jobTitle": "Founder",
-      "worksFor": {
-        "@id": "https://uv.bio/#organization"
+      "email": "hello@utpalmv.com",
+      "telephone": "+919825221785",
+      "worksFor": { "@id": "https://uv.bio/#organization" },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "hello@utpalmv.com",
+        "telephone": "+919825221785",
+        "contactType": "business"
       },
       "sameAs": [
         "https://linkedin.com/in/utpalmv",
@@ -63,10 +64,7 @@
       "name": "EightQor Group",
       "url": "https://eightqor.com",
       "logo": "https://uv.bio/uvlogo.svg",
-      "founder": {
-        "@type": "Person",
-        "name": "Utpal Vaishnav"
-      },
+      "founder": { "@type": "Person", "name": "Utpal Vaishnav" },
       "subOrganization": [
         { "@type": "Organization", "name": "EightQor Capital", "url": "https://eightqor.com" },
         { "@type": "Organization", "name": "Upsquare", "url": "https://upsquaretech.com" },
@@ -77,7 +75,6 @@
 }
 </script>
 
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-F2HSEZGYYB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -92,7 +89,6 @@
     --fg:#111;
     --muted:#666;
     --line:#e5e5e5;
-    --accent:#111;
     --gold:#C5A059;
   }
   *{box-sizing:border-box;}
@@ -111,14 +107,34 @@
     max-width:420px;
     text-align:center;
   }
+  .avatar-wrap{
+    position:relative;
+    width:120px;
+    height:120px;
+    margin:0 auto 20px;
+  }
   img.avatar{
     display:block;
     width:120px;
     height:120px;
     border-radius:50%;
     object-fit:cover;
-    margin:0 auto 20px;
   }
+  .badge{
+    position:absolute;
+    bottom:-2px;
+    right:-2px;
+    width:34px;
+    height:34px;
+    border-radius:50%;
+    background:#fff;
+    border:2px solid var(--bg);
+    box-shadow:0 0 0 1px var(--line);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .badge svg{ width:18px; height:10px; }
   h1{
     font-family:'Cormorant Garamond',Georgia,serif;
     font-size:30px;
@@ -138,32 +154,48 @@
   p.role{
     font-size:13px;
     color:var(--muted);
-    margin:14px 0 16px;
+    margin:14px 0 8px;
     letter-spacing:-0.01em;
   }
   p.bio{
     font-size:14px;
     line-height:1.6;
     color:#333;
-    margin:0 0 32px;
+    margin:0 0 20px;
     letter-spacing:-0.01em;
+  }
+  .social-row{
+    display:flex;
+    justify-content:center;
+    gap:22px;
+    margin-bottom:22px;
+    color:var(--fg);
+  }
+  .social-row a{
+    color:var(--fg);
+    display:flex;
+  }
+  .social-row svg{
+    width:20px;
+    height:20px;
   }
   nav.links{
     display:flex;
     flex-direction:column;
-    gap:12px;
+    gap:8px;
+    text-align:left;
+    margin-bottom:16px;
   }
   nav.links a{
-    display:block;
-    padding:14px 16px;
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+    padding:11px 14px;
     background:#fff;
     border:1px solid var(--line);
     border-radius:10px;
     color:var(--fg);
     text-decoration:none;
-    font-size:14px;
-    font-weight:500;
-    letter-spacing:-0.01em;
     transition:border-color .15s ease, transform .1s ease;
   }
   nav.links a:hover{
@@ -172,40 +204,126 @@
   nav.links a:active{
     transform:scale(0.98);
   }
-  nav.links a.linkedin{
+  nav.links svg{
+    width:18px;
+    height:18px;
+    margin-top:1px;
+    flex-shrink:0;
+    color:var(--fg);
+  }
+  .link-title{
+    font-size:13px;
+    font-weight:500;
+    color:var(--fg);
+  }
+  .link-desc{
+    font-size:11px;
+    color:#888;
+    margin-top:2px;
+  }
+  .save-contact{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
     background:var(--gold);
     color:#1a1305;
-    border-color:var(--gold);
+    border-radius:10px;
+    padding:13px;
+    font-size:14px;
     font-weight:600;
+    text-decoration:none;
+    letter-spacing:-0.01em;
+  }
+  .save-contact svg{
+    width:18px;
+    height:18px;
   }
   footer{
-    margin-top:40px;
+    margin-top:32px;
     font-size:12px;
     color:#999;
   }
-  footer a{color:#999;}
 </style>
 </head>
 <body>
 <main>
-  <img class="avatar" src="uv-240.webp" srcset="uv-240.webp 240w, uv-480.webp 480w" sizes="120px" alt="Utpal Vaishnav (UV)" width="120" height="120" fetchpriority="high">
+
+  <div class="avatar-wrap">
+    <img class="avatar" src="uv-240.webp" srcset="uv-240.webp 240w, uv-480.webp 480w" sizes="120px" alt="Utpal Vaishnav (UV)" width="120" height="120" fetchpriority="high">
+    <div class="badge">
+      <svg viewBox="0 0 65 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M31.0742 19.3992C31.0742 20.1609 31.1012 20.8926 31.0682 21.6243C30.9752 23.6964 30.6934 25.7386 29.8717 27.6608C28.4383 31.0164 26.0543 33.4184 22.6177 34.7438C20.7165 35.4785 18.8813 36.0003 16.8151 36.0003C15.3907 36.0003 14.6081 35.9433 13.5945 35.7994C11.8942 35.5595 10.5597 35.1847 9.00939 34.5159C6.72134 33.5293 4.78415 32.0779 3.25778 30.1168C1.56649 27.9457 0.540916 25.4777 0.354993 22.7278C0.181066 20.1309 0.0611158 17.528 0.0311283 14.9281C-0.0198505 10.301 0.00713825 0.0392965 0.00713825 0.0392965L10.4218 0.0153065C10.4218 0.0153065 10.4128 13.9355 10.4218 20.3918C10.4218 22.41 10.6857 24.3802 11.7652 26.1434C13.3816 28.7793 15.7266 30.3867 18.8063 30.7675C22.2069 31.1903 24.8218 29.7899 26.759 27.043C27.8955 25.4297 28.4293 23.5975 28.6782 21.6633C28.7742 20.9106 28.9091 20.1639 29.026 19.4022H31.0772L31.0742 19.3992Z" fill="#050505"/>
+        <path d="M24.6953 0.00629997H38.3066L51.2373 22.398L44.4301 34.1861L24.6953 0.00629997Z" fill="#050505"/>
+        <path d="M49.2734 0.0092938L64.1742 0.000297546L56.7133 12.9219L55.3099 5.12216L49.2734 0.0092938Z" fill="#C5A059"/>
+      </svg>
+    </div>
+  </div>
+
   <h1>Utpal Vaishnav (UV)</h1>
   <p class="role">Founder, EightQor Group</p>
-  <p class="bio">Building EightQor Group, an ecosystem of capital, technology, and ventures, including EightQor Capital, Upsquare, and House of Starts.</p>
+  <p class="bio">I architect capital, technology, and ventures that compound.</p>
+
+  <div class="social-row">
+    <a href="https://x.com/utpalmv" data-link="x" rel="noopener" target="_blank" aria-label="X">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20"/></svg>
+    </a>
+    <a href="https://linkedin.com/in/utpalmv" data-link="linkedin-icon" rel="noopener" target="_blank" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8" cy="8.5" r="0.8" fill="currentColor" stroke="none"/><path d="M8 11v6M12 11v6M12 13.5c0-1.5 1-2.5 2.5-2.5S17 12 17 13.5V17"/></svg>
+    </a>
+    <a href="https://instagram.com/utpalmv" data-link="instagram" rel="noopener" target="_blank" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="0.8" fill="currentColor" stroke="none"/></svg>
+    </a>
+  </div>
 
   <nav class="links">
-    <a href="https://eightqor.com" data-link="eightqor" rel="noopener" target="_blank">EightQor Group</a>
-    <a href="https://upsquaretech.com" data-link="upsquare" rel="noopener" target="_blank">Upsquare</a>
-    <a href="https://houseofstarts.com" data-link="houseofstarts" rel="noopener" target="_blank">House of Starts</a>
-    <a href="https://utpalmv.com" data-link="almanac" rel="noopener" target="_blank">The UV Almanac</a>
-    <a href="https://linkedin.com/in/utpalmv" data-link="linkedin" class="linkedin" rel="noopener" target="_blank">Connect on LinkedIn</a>
+    <a href="https://eightqor.com" data-link="eightqor" rel="noopener" target="_blank">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      <div>
+        <div class="link-title">EightQor Group</div>
+        <div class="link-desc">Capital and ecosystem holding layer</div>
+      </div>
+    </a>
+    <a href="https://upsquaretech.com" data-link="upsquare" rel="noopener" target="_blank">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg>
+      <div>
+        <div class="link-title">Upsquare</div>
+        <div class="link-desc">Technology holding and incubator</div>
+      </div>
+    </a>
+    <a href="https://houseofstarts.com" data-link="houseofstarts" rel="noopener" target="_blank">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 6l-9.5 9.5-5-5L1 18"/><path d="M17 6h6v6"/></svg>
+      <div>
+        <div class="link-title">House of Starts</div>
+        <div class="link-desc">Venture builder for founders</div>
+      </div>
+    </a>
+    <a href="https://utpalmv.com" data-link="almanac" rel="noopener" target="_blank">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v15H6.5A2.5 2.5 0 0 0 4 19.5v-15Z"/><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/></svg>
+      <div>
+        <div class="link-title">The UV Almanac</div>
+        <div class="link-desc">Writing on systems and capital</div>
+      </div>
+    </a>
+    <a href="https://utpalmv.com/now" data-link="now" rel="noopener" target="_blank">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      <div>
+        <div class="link-title">Now</div>
+        <div class="link-desc">What I am focused on right now</div>
+      </div>
+    </a>
   </nav>
+
+  <a class="save-contact" href="uv.vcf" data-link="save-contact" download>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M6 16c0-1.657 1.343-3 3-3s3 1.343 3 3"/><path d="M14 8h4M14 12h4"/></svg>
+    Save contact
+  </a>
 
   <footer>© 2026 Utpal Vaishnav</footer>
 </main>
 
 <script>
-  document.querySelectorAll('nav.links a').forEach(function(el){
+  document.querySelectorAll('a[data-link]').forEach(function(el){
     el.addEventListener('click', function(){
       if (typeof gtag === 'function') {
         gtag('event', 'link_click', {
